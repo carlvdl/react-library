@@ -46,7 +46,7 @@ export const Carousel = () => {
                     img: responseData[key].img,
                 });
 
-            }
+            } 
 
             setBooks(loadedBooks);
             setIsLoading(false);
