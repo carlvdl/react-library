@@ -30,11 +30,7 @@ export const Carousel = () => {
 
             const loadedBooks: BookModel[] = [];
             let responseData = responseDataJson.books
-            console.log("Got responseDataJson...cccc.", responseData);
             for (const key in responseData) {
-                console.log("Got key....", key);
-                console.log("Got responseData[key]....", responseData[key]);
-                console.log("Got key....", key);
                 loadedBooks.push({
                     id: responseData[key].id,
                     title: responseData[key].title,
@@ -46,7 +42,7 @@ export const Carousel = () => {
                     img: responseData[key].img,
                 });
 
-            } 
+            }
 
             setBooks(loadedBooks);
             setIsLoading(false);
